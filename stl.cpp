@@ -34,15 +34,13 @@ int main()
     // if(ind>0) cout<<ind<<endl;
     // else cout<<-1<<endl;
 
-    //upper_bound fn use-
+    //upper_bound fn use-smallest num greater than some part. int
 
-
-
-
-
-
-
-
+    vector<int> v{1,4,4,4,4,9,9,10,11};
+    int n=v.size();
+    int ind=upper_bound(v.begin(),v.end(),9)-v.begin();
+    if(ind<n) cout<<ind<<endl;
+    else cout<<-1<<endl;
 
     return 0;
 }
